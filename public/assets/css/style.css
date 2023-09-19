@@ -1,0 +1,92 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* background-color: red; */
+    }
+    body{
+    overflow-x: hidden;
+    }
+
+
+nav {
+    background-color: rgb(224, 222, 222);
+    }
+    
+    .nav-item {
+    margin-top: 2%;
+    font-size: large;
+    }
+    
+    .navbar-nav .nav-item:nth-child(1) .nav-link {
+    color: rgb(124, 122, 115);
+    margin-top: -2%;
+    margin-right: 30px;
+    
+    }
+    
+    .navbar-nav .nav-item:nth-child(2) .nav-link {
+    color: rgb(208, 57, 57);
+    margin-right: 10px;
+    margin-top: 7%;
+    }
+    
+    .navbar-nav .nav-item:nth-child(3) .nav-link {
+    color: rgb(58, 106, 196);
+    margin-right: 10px;
+    margin-top: 7%;
+    }
+    
+    .navbar-nav .nav-item:nth-child(4) .nav-link {
+    color: rgb(245, 168, 2);
+    margin-right: 10px;
+    margin-top: 4.5%;
+    }
+    
+    .hover-animation-peinture {
+    color: rgb(208, 57, 57);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+    
+    .hover-animation-peinture:hover {
+    box-shadow: inset 100px 0 0 0 rgb(208, 57, 57);
+    color: white;
+    }
+    
+    .hover-animation-sculture {
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+    
+    .hover-animation-sculture:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+    }
+    
+    .hover-animation-photo {
+    color: rgb(245, 168, 2);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+    
+    .hover-animation-photo:hover {
+    box-shadow: inset 130px 0 0 0 rgb(245, 168, 2);
+    color: white;
+    }
+    
+    .navbar-nav .nav-item:nth-child(2) .nav-link:hover,
+    .navbar-nav .nav-item:nth-child(3) .nav-link:hover,
+    .navbar-nav .nav-item:nth-child(4) .nav-link:hover {
+    color: white;
+    }
+    
+    .log:hover {
+    transform: scale(1.01);
+    }

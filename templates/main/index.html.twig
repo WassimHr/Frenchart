@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil
+{% endblock %}
+
+{% block body %}
+	<main class="container">
+		<section class="raw">
+			<div class="col-12">
+				<h1>Bienvenue dans notre boutique</h1>
+			</div>
+            <div class="col-12 d-flex">
+			{% for category in categories %}
+				<div class="col-4">
+                    <div class="card h-100">
+                    <div class="card-body">
+                    <h3 class="card-title">{{category.name}}</h3>
+                    <a href="{{ path('categories_list', {slug: category.slug}) }}" class="btn btn-primary">Voir plus</a>
+                    </div>
+                    </div>
+					
+				</div>
+			{% endfor %}</div>
+			<div class="col-12">
+			</div>
+		</section>
+	</main>
+{% endblock %}
